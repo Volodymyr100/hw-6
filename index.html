@@ -20,8 +20,56 @@
 <body class="fixed-body">
     <div class="overlay is-hidden" data-modal>
         <div class="window">
-            <button class="modal-button" data-modal-close>
-                <!-- <img src="./images/vector.svg" alt="" class="close"> -->
+                <div class="bottom-pic" data-modal-close>
+                <svg class="modal-pic">
+                    <use href="./images/sprinttwo.svg#icon-close-black">
+                    </use>
+                </svg>
+                </div>
+            <p class="form-header">Оставьте свои данные, мы вам перезвоним</p>
+            <form class="form">
+
+                <label name="name" class="form-name">
+                    <input type="text" placeholder=" " class="form-input">
+                    <span class="input-label">Имя</span>
+                    <svg class="pic-item">
+                        <use href="./images/sprinttwo.svg#icon-person-black">
+                        </use>
+                    </svg>
+                </label>
+
+                <label name="phone" class="form-name">
+                    <input type="tel" placeholder=" " class="form-input">      
+                    <span class="input-label">Телефон</span>
+                    <svg class="pic-item">
+                        <use href="./images/sprinttwo.svg#icon-phone-black">
+                        </use>
+                    </svg>
+                </label>
+
+                <label name="mail" class="form-name">
+                    <input type="email" placeholder=" " class="form-input">
+                    <span class="input-label">Почта</span>
+                    <svg class="pic-item">
+                        <use href="./images/sprinttwo.svg#icon-email-black">
+                        </use>
+                    </svg>
+                </label>
+
+                <label name="comment" class="form-name">
+                    <textarea name="comment" placeholder=" "  class="form-text"></textarea>       
+                    <span class="input-label">Введите текст</span>
+                </label>
+               
+                <label>
+                    <input type="checkbox" name="agreement"/>
+                    Соглашаюсь с рассылкой и принимаю 
+                    <a href="" class="link-agreement">Условия договора</a>
+                </label>
+        
+            </form>
+            <button class="button-form">
+                Отправить
             </button>
         </div>
     </div>
@@ -33,7 +81,7 @@
       <ul class="list navigation">
           <li class="nav-item"><a href="./index.html" class="link navi-links nav-underline">Студия</a></li>
           <li class="nav-item"><a href="./portfolio.html" class="link navi-links">Портфолио</a></li>
-          <li class="nav-item"><a href="" class="link navi-links">Контакты</a></li>
+          <li class="nav-item"><a href="./test.html" class="link navi-links">Контакты</a></li>
       </ul>
 </nav>
 
@@ -468,9 +516,13 @@
                 <input type="email" name="email" placeholder="E-mail" class="footer-input"/>
             </label>
         </form>
-        <button>
-
+        <button class="footer-buttom">
+            Подписаться
+                <svg class="footer-send">
+                    <use href="./images/sprinttwo.svg#icon-send"></use>
+                </svg>
         </button>
+        
         </div>
     </div>
 </div>
